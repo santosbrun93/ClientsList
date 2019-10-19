@@ -11,7 +11,9 @@ import javax.persistence.Table;
 
 public class Cliente extends Pessoa implements Serializable {
 
-    
+    @Id
+    @Column(name = "ID_CLIENTE")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long idCliente;
     
     
