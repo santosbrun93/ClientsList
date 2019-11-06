@@ -6,7 +6,16 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 
+@Entity
+@Table(name = "PESSOAS")
+@Inheritance(strategy = InheritanceType.JOINED)
 public abstract class Pessoa {
+    
+    
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column (name = "ID_PESSOA")
+    private long id;
     
     @Column (name = "NOME")
     private String nome;
@@ -20,30 +29,26 @@ public abstract class Pessoa {
     @Column (name = "RG")
     private long rg;
     
-    @OneToMany(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "ID_ENDERECO",
-        referencedColumnName = "ID_ENDERECO",
-        foreignKey = @ForeignKey(name = "FK_ENDERECO_ID_ENDERECO"))
-    private Collection <Endereco> enderecos = new ArrayList<Endereco>();
+    @Column (name = "CELULARES")
+    private String tcelular;
     
-    @OneToMany
-    @JoinColumn(name= "ID_PESSOA",
-        foreignKey = @ForeignKey(name = "FK_PESSOA_ID_PESSOA"))
-    private Collection <Telefone> telefones = new ArrayList<Telefone>();
-
+    @Column (name = "FIXOS")
+    private String tfixo;
+    
     
     public Pessoa() {
     }
-    
-    public Pessoa( String nome, Date nascimento, String cpf, long rg, Collection <Endereco> enderecos, Collection <Telefone> telefones ) {
+
+    public Pessoa(long id, String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
+        this.id = id;
         this.nome = nome;
         this.nascimento = nascimento;
         this.cpf = cpf;
         this.rg = rg;
-        this.enderecos = enderecos;
-        this.telefones = telefones;
+        this.tcelular = tcelular;
+        this.tfixo = tfixo;
     }
-    
+
 
     public String getNome() {
         return nome;
@@ -77,19 +82,21 @@ public abstract class Pessoa {
         this.rg = rg;
     }
 
-    public Collection<Endereco> getEnderecos() {
-        return enderecos;
+    public String getTcelular() {
+        return tcelular;
     }
 
-    public void setEnderecos(Collection<Endereco> enderecos) {
-        this.enderecos = enderecos;
-    }
-    
-    public Collection<Telefone> getTelefones() {
-        return telefones;
+    public void setTcelular(String tcelular) {
+        this.tcelular = tcelular;
     }
 
-    public void setTelefones(Collection<Telefone> telefones) {
-        this.telefones = telefones;
+    public String getTfixo() {
+        return tfixo;
     }
+
+    public void setTfixo(String tfixo) {
+        this.tfixo = tfixo;
+    }
+
+  
 }
