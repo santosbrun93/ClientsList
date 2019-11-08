@@ -10,76 +10,59 @@ public class telaLogin extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        bindingGroup = new org.jdesktop.beansbinding.BindingGroup();
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jButtonLogin = new javax.swing.JButton();
+        jButtonQuit = new javax.swing.JButton();
+        jLabelPassLog = new javax.swing.JLabel();
+        jLabelUserLog = new javax.swing.JLabel();
+        etUserLog = new javax.swing.JTextField();
+        pfSenhaLog = new javax.swing.JPasswordField();
         jButtonCadastroUser = new javax.swing.JButton();
+        jLabelTituloLog = new javax.swing.JLabel();
         jLabelFundo = new javax.swing.JLabel();
-
-        jLabel1.setText("jLabel1");
-
-        jButton1.setText("jButton1");
-
-        jButton2.setText("jButton2");
-
-        jButton3.setText("jButton3");
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_sportalgos.jpg"))); // NOI18N
-        jLabel2.setText("jLabelFundoLogin");
-
-        org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, jLabel2, org.jdesktop.beansbinding.ObjectProperty.create(), jLabel2, org.jdesktop.beansbinding.BeanProperty.create("background"));
-        bindingGroup.addBinding(binding);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jButton4.setText("Acessar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButtonLogin.setText("Acessar");
+        jButtonLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButtonLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton4);
-        jButton4.setBounds(140, 230, 90, 23);
+        getContentPane().add(jButtonLogin);
+        jButtonLogin.setBounds(140, 230, 90, 23);
 
-        jButton6.setText("Sair");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jButtonQuit.setText("Sair");
+        jButtonQuit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jButtonQuitActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton6);
-        jButton6.setBounds(240, 230, 70, 23);
+        getContentPane().add(jButtonQuit);
+        jButtonQuit.setBounds(240, 230, 70, 23);
 
-        jLabel4.setText("Senha:");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(140, 190, 34, 14);
+        jLabelPassLog.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabelPassLog.setText("Senha:");
+        getContentPane().add(jLabelPassLog);
+        jLabelPassLog.setBounds(140, 190, 40, 17);
 
-        jLabel3.setText("Usuário:");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(140, 160, 50, 20);
+        jLabelUserLog.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabelUserLog.setText("Usuário:");
+        getContentPane().add(jLabelUserLog);
+        jLabelUserLog.setBounds(140, 160, 50, 20);
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        etUserLog.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                etUserLogActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField1);
-        jTextField1.setBounds(190, 160, 120, 20);
+        getContentPane().add(etUserLog);
+        etUserLog.setBounds(190, 160, 120, 20);
 
-        jPasswordField1.setText("jPasswordField1");
-        getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(190, 190, 120, 20);
+        pfSenhaLog.setText("jPasswordField1");
+        getContentPane().add(pfSenhaLog);
+        pfSenhaLog.setBounds(190, 190, 120, 20);
 
         jButtonCadastroUser.setText("Cadastrar Usuário");
         jButtonCadastroUser.addActionListener(new java.awt.event.ActionListener() {
@@ -90,18 +73,23 @@ public class telaLogin extends javax.swing.JFrame {
         getContentPane().add(jButtonCadastroUser);
         jButtonCadastroUser.setBounds(140, 270, 170, 23);
 
+        jLabelTituloLog.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabelTituloLog.setText("Login de Usuário");
+        jLabelTituloLog.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jLabelTituloLog.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        getContentPane().add(jLabelTituloLog);
+        jLabelTituloLog.setBounds(160, 100, 140, 40);
+
         jLabelFundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_sportalgos.jpg"))); // NOI18N
         jLabelFundo.setLabelFor(this);
         getContentPane().add(jLabelFundo);
-        jLabelFundo.setBounds(0, 0, 500, 460);
-
-        bindingGroup.bind();
+        jLabelFundo.setBounds(0, 0, 450, 390);
 
         setSize(new java.awt.Dimension(467, 424));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButtonLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLoginActionPerformed
         
         MenuPrincipal main = new MenuPrincipal();    
         
@@ -109,11 +97,11 @@ public class telaLogin extends javax.swing.JFrame {
         
         dispose();
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jButtonLoginActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void etUserLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_etUserLogActionPerformed
       
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_etUserLogActionPerformed
 
     private void jButtonCadastroUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastroUserActionPerformed
         
@@ -124,10 +112,10 @@ public class telaLogin extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_jButtonCadastroUserActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jButtonQuitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonQuitActionPerformed
         
         dispose();
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_jButtonQuitActionPerformed
 
 
     public static void main(String args[]) {
@@ -140,19 +128,14 @@ public class telaLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JTextField etUserLog;
     private javax.swing.JButton jButtonCadastroUser;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JButton jButtonLogin;
+    private javax.swing.JButton jButtonQuit;
     private javax.swing.JLabel jLabelFundo;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    private org.jdesktop.beansbinding.BindingGroup bindingGroup;
+    private javax.swing.JLabel jLabelPassLog;
+    private javax.swing.JLabel jLabelTituloLog;
+    private javax.swing.JLabel jLabelUserLog;
+    private javax.swing.JPasswordField pfSenhaLog;
     // End of variables declaration//GEN-END:variables
 }

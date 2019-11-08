@@ -35,6 +35,21 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jLabelTitulo = new javax.swing.JLabel();
+        jButtonIrCadastrar = new javax.swing.JButton();
+        jButtonIrEditar = new javax.swing.JButton();
+        jButtonIrExcluir = new javax.swing.JButton();
+        jButtonIrListar = new javax.swing.JButton();
+        jButtonIrExportar = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jMenuBar = new javax.swing.JMenuBar();
+        jMenuCadastro = new javax.swing.JMenu();
+        jMenuItemCadastrar = new javax.swing.JMenuItem();
+        jMenuItemEditar = new javax.swing.JMenuItem();
+        jMenuItemFind = new javax.swing.JMenuItem();
+        jMenuItemExcluir = new javax.swing.JMenuItem();
+        jMenuRelatorios = new javax.swing.JMenu();
+        jMenuItemRelGeral = new javax.swing.JMenuItem();
 
         jMenu3.setText("Cadastro");
 
@@ -66,24 +81,124 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabelTitulo.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabelTitulo.setText("Bem-vindo ao SisRegClin");
+
+        jButtonIrCadastrar.setText("Cadastrar Cliente");
+        jButtonIrCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIrCadastrarActionPerformed(evt);
+            }
+        });
+
+        jButtonIrEditar.setText("Editar Cliente");
+
+        jButtonIrExcluir.setText("Excluir Cliente");
+
+        jButtonIrListar.setText("Listar Clientes");
+        jButtonIrListar.setMaximumSize(new java.awt.Dimension(120, 50));
+        jButtonIrListar.setMinimumSize(new java.awt.Dimension(120, 50));
+
+        jButtonIrExportar.setText("Exportar de Clientes");
+        jButtonIrExportar.setMaximumSize(new java.awt.Dimension(120, 50));
+        jButtonIrExportar.setMinimumSize(new java.awt.Dimension(120, 50));
+        jButtonIrExportar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonIrExportarActionPerformed(evt);
+            }
+        });
+
+        jButton6.setText("Sair");
+
+        jMenuCadastro.setText("Cadastro");
+
+        jMenuItemCadastrar.setText("Cadastrar Cliente");
+        jMenuItemCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadastrarActionPerformed(evt);
+            }
+        });
+        jMenuCadastro.add(jMenuItemCadastrar);
+
+        jMenuItemEditar.setText("Editar Cliente");
+        jMenuCadastro.add(jMenuItemEditar);
+
+        jMenuItemFind.setText("Localizar Cliente");
+        jMenuCadastro.add(jMenuItemFind);
+
+        jMenuItemExcluir.setText("Excluir Cliente");
+        jMenuCadastro.add(jMenuItemExcluir);
+
+        jMenuBar.add(jMenuCadastro);
+
+        jMenuRelatorios.setText("Relatórios");
+
+        jMenuItemRelGeral.setText("Relatório Geral de Clientes");
+        jMenuRelatorios.add(jMenuItemRelGeral);
+
+        jMenuBar.add(jMenuRelatorios);
+
+        setJMenuBar(jMenuBar);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 536, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(151, 151, 151)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButtonIrCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonIrEditar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonIrExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(125, 125, 125)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButtonIrListar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButtonIrExportar, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabelTitulo))
+                .addContainerGap(182, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 475, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabelTitulo)
+                .addGap(61, 61, 61)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonIrCadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonIrListar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonIrEditar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonIrExportar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButtonIrExcluir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(131, 131, 131))
         );
 
-        setSize(new java.awt.Dimension(552, 514));
+        setSize(new java.awt.Dimension(734, 514));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItemCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadastrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItemCadastrarActionPerformed
+
+    private void jButtonIrCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIrCadastrarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonIrCadastrarActionPerformed
+
+    private void jButtonIrExportarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIrExportarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonIrExportarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,13 +236,28 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButtonIrCadastrar;
+    private javax.swing.JButton jButtonIrEditar;
+    private javax.swing.JButton jButtonIrExcluir;
+    private javax.swing.JButton jButtonIrExportar;
+    private javax.swing.JButton jButtonIrListar;
+    private javax.swing.JLabel jLabelTitulo;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenu jMenuCadastro;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItemCadastrar;
+    private javax.swing.JMenuItem jMenuItemEditar;
+    private javax.swing.JMenuItem jMenuItemExcluir;
+    private javax.swing.JMenuItem jMenuItemFind;
+    private javax.swing.JMenuItem jMenuItemRelGeral;
+    private javax.swing.JMenu jMenuRelatorios;
     // End of variables declaration//GEN-END:variables
 }
