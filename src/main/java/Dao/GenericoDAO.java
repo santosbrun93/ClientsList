@@ -4,7 +4,6 @@ import controller.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-
 import java.io.Serializable;
 import java.util.List;
 
@@ -12,6 +11,7 @@ public abstract class GenericoDAO<T> {
 
     private static Session session;
     private Transaction transaction = null;
+    
 
     public long salvar(T entity) {
         long id = 0;

@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Table(name = "CLIENTES")
 
 public class Cliente extends Pessoa implements Serializable {
-
+   
     @Column (name = "RUA")
     private String rua;
     
@@ -21,23 +21,26 @@ public class Cliente extends Pessoa implements Serializable {
     @Column (name = "CIDADES")
     private String cidade;
     
-    @Column (name = "ESTADOS")
+    @Column (name = "ESTADO")
     private String estado;
     
-    @Column (name = "PAISES")
+    @Column (name = "PAISE")
     private String pais;
+    
+    @Column (name = "STATUS")
+    private boolean status;
     
     public Cliente() {
     }
 
-    public Cliente(String rua, int numero, String bairro, String cidade, String estado, String pais, long id, String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
-        super(id, nome, nascimento, cpf, rg, tcelular, tfixo);
+    public Cliente(String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status) {
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
         this.cidade = cidade;
         this.estado = estado;
         this.pais = pais;
+        this.status = status;
     }
 
 

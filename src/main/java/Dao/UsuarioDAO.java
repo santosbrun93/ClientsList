@@ -13,7 +13,6 @@ public class UsuarioDAO extends GenericoDAO<Usuario> {
         Usuario usuario = null;
         try {
             Session session = HibernateUtil.getSession();
-
             Query query = session.createSQLQuery(
                     "select * from usuarios u where u.email = :email")
                     .addEntity(Usuario.class)
@@ -25,7 +24,7 @@ public class UsuarioDAO extends GenericoDAO<Usuario> {
         } catch (HibernateException e) {
             e.printStackTrace();
         }
-
+        
         return usuario;
     }
     

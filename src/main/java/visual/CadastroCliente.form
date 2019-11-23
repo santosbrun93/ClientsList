@@ -78,77 +78,81 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="275" max="-2" attributes="0"/>
-              <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace pref="29" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jButtonQuit" min="-2" pref="78" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jButtonSalvarCliente" min="-2" pref="78" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabelNascimentoCliente" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelCPFCliente" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelRGCliente" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelFixoCliente" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelCelCliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelNomeCliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabelCPFCliente" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelRGCliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelFixoCliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabelCelCliente" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="ftCelCliente" max="32767" attributes="0"/>
+                                              <Component id="etRGCliente" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ftFixoCliente" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="ftCPFCliente" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="etNomeCliente" min="-2" pref="229" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jLabelNascimentoCliente" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="ftNascimentoCliente" min="-2" pref="119" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="ftCelCliente" pref="119" max="32767" attributes="0"/>
-                                  <Component id="etRGCliente" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="etNomeCliente" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="ftFixoCliente" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="ftNascimentoCliente" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="ftCPFCliente" alignment="0" max="32767" attributes="0"/>
+                              <EmptySpace pref="17" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabelPais" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelBairro" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelCidade" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelRua" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelPais1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelEstado" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="etCidadeCliente" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="etBairroCliente" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="etPaisCliente" min="-2" pref="344" max="-2" attributes="0"/>
+                                  <Component id="etEstadoCliente" alignment="0" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="jRadioButton1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="jRadioButton3" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                                              <Component id="jRadioButton2" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="etRuaCliente" min="-2" pref="213" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabelNum" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="etNumCliente" min="-2" pref="80" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <Component id="jLabelNomeCliente" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButtonSalvarCliente" min="-2" pref="91" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabelBairro" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="132" pref="370" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelCidade" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelEstado" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelPais" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="etCidadeCliente" pref="337" max="32767" attributes="0"/>
-                          <Component id="etEstadoCliente" max="32767" attributes="0"/>
-                          <Component id="etBairroCliente" alignment="0" pref="337" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="etNumCliente" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Component id="etRuaCliente" min="-2" pref="213" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="124" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="etPaisCliente" alignment="0" pref="337" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabelRua" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabelNum" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButtonQuit" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -157,84 +161,64 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Component id="jLabelTitulo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelNascimentoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ftNascimentoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelRua" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etRuaCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelNum" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etNumCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etNomeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRadioButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRadioButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelPais1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jRadioButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ftNascimentoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNascimentoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRua" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etRuaCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNum" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etNumCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelCPFCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ftCPFCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etBairroCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelRGCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etRGCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etCidadeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelCPFCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ftCPFCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelRGCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etRGCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelCelCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ftCelCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelFixoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="ftFixoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabelCelCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ftCelCliente" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelBairro" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etBairroCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelCidade" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etCidadeCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelEstado" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etEstadoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabelPais" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="etPaisCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="etEstadoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelEstado" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButtonSalvarCliente" pref="46" max="32767" attributes="0"/>
-                  <Component id="jButtonQuit" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelFixoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ftFixoCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelPais" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="etPaisCliente" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="27" max="32767" attributes="0"/>
+              <EmptySpace pref="24" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButtonQuit" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButtonSalvarCliente" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="26" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -243,9 +227,9 @@
     <Component class="javax.swing.JLabel" name="jLabelTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Times New Roman" size="24" style="0"/>
+          <Font name="Times New Roman" size="18" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Cadastro de Cliente"/>
+        <Property name="text" type="java.lang.String" value="CADASTRO DE CLIENTE"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="etRGCliente">
@@ -311,7 +295,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelPais">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Pais"/>
+        <Property name="text" type="java.lang.String" value="Pa&#xed;s"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabelBairro">
@@ -368,6 +352,32 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ftNascimentoClienteActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Masculino"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Outro"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jRadioButton2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelPais1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sexo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JRadioButton" name="jRadioButton3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Feminino"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
