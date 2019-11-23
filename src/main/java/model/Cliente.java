@@ -9,6 +9,12 @@ import javax.persistence.*;
 
 public class Cliente extends Pessoa implements Serializable {
    
+       
+    @Id
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Column (name = "ID_CLIENTE")
+    private long id;
+    
     @Column (name = "RUA")
     private String rua;
     
@@ -30,10 +36,12 @@ public class Cliente extends Pessoa implements Serializable {
     @Column (name = "STATUS")
     private boolean status;
     
+    
     public Cliente() {
     }
 
-    public Cliente(String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status) {
+    public Cliente(long id, String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status) {
+        this.id = id;
         this.rua = rua;
         this.numero = numero;
         this.bairro = bairro;
@@ -43,7 +51,20 @@ public class Cliente extends Pessoa implements Serializable {
         this.status = status;
     }
 
+    
+    public Cliente(long id, String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status, String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
+        super(nome, nascimento, cpf, rg, tcelular, tfixo);
+        this.id = id;
+        this.rua = rua;
+        this.numero = numero;
+        this.bairro = bairro;
+        this.cidade = cidade;
+        this.estado = estado;
+        this.pais = pais;
+        this.status = status;
+    }
 
+    
     public String getRua() {
         return rua;
     }
@@ -90,6 +111,22 @@ public class Cliente extends Pessoa implements Serializable {
 
     public void setPais(String pais) {
         this.pais = pais;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
     
     

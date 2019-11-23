@@ -85,4 +85,18 @@ public abstract class GenericoDAO<T> {
         }
         return objects;
     }
+    public List findAll(Class classe) {
+        List objects = null;
+        try {
+            session     = HibernateUtil.getSession();
+            Query query = session.createQuery("from " + classe.getName());
+            objects = query.list();
+        } catch(Exception ex) {
+            ex.printStackTrace();
+            if(transaction != null) transaction.rollback();
+        } finally {
+            try {if(session != null) session.close();} catch(Exception ex) {}
+        }
+        return objects;
+    }
 }

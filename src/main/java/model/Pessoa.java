@@ -1,22 +1,12 @@
-
 package model;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 
-@Entity
-@Table(name = "PESSOAS")
-@Inheritance(strategy = InheritanceType.JOINED)
+
 public abstract class Pessoa {
-    
-    
-    @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    @Column (name = "ID_PESSOA")
-    private long id;
-    
+   
+
     @Column (name = "NOME")
     private String nome;
     
@@ -39,8 +29,8 @@ public abstract class Pessoa {
     public Pessoa() {
     }
 
-    public Pessoa(long id, String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
-        this.id = id;
+    public Pessoa(String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
+
         this.nome = nome;
         this.nascimento = nascimento;
         this.cpf = cpf;

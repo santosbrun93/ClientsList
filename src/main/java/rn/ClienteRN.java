@@ -24,17 +24,17 @@ public class ClienteRN {
         return id;
     }
 
-    public void alterCliente(Cliente cliente) {
+    public void alterCliente(Cliente Cliente) {
         try {
-            clienteDAO.update(cliente);
+            clienteDAO.update(Cliente);
         } catch (Exception e) {
             e.getMessage();
         }
     }
 
-    public void deleteCliente(Cliente cliente) {
+    public void deleteCliente(Cliente Cliente) {
         try {
-            clienteDAO.delete(cliente);
+            clienteDAO.delete(Cliente);
         } catch (Exception e) {
 
             e.getMessage();
