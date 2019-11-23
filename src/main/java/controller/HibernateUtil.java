@@ -16,7 +16,7 @@ public class HibernateUtil {
         try{
             loadSessionFactory();
         }catch(Exception e){
-            System.err.println("Exception while initializing hibernate util // ExceÁ„o durante inicializaÁ„o do hibernate util ");
+            System.err.println("Exception while initializing hibernate util // Exce√ß√£o durante inicializa√ß√£o do hibernate util ");
         }
     }
 
@@ -24,11 +24,7 @@ public class HibernateUtil {
 
         Configuration configuration = new Configuration();
         configuration.configure("hibernate.cfg.xml");
-        configuration.addAnnotatedClass(Pessoa.class);
         configuration.addAnnotatedClass(Cliente.class);
-        configuration.addAnnotatedClass(Telefone.class);
-        configuration.addAnnotatedClass(Endereco.class);
-
 
         ServiceRegistry srvcReg = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
         sessionFactory = configuration.buildSessionFactory(srvcReg);
@@ -40,13 +36,12 @@ public class HibernateUtil {
         try {
             retSession = sessionFactory.openSession();
         }catch(HibernateException t){
-            System.err.println("Exception while getting session  // ExceÁ„o enquanto buscando sess„o ");
-        }
-        if(retSession == null) {
-            System.err.println("session is discovered null  //  Sess„o descoberta est· nula ");
+            System.err.println("Exception while getting session  // Exce√ß√£o enquanto buscando sess√£o ");
+                if(retSession == null) {
+            System.err.println("session is discovered null  //  Sess√£o descoberta est√° nula ");
         }
 
         return retSession;
     }
-}
+
 

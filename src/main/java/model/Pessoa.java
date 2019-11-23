@@ -1,5 +1,5 @@
 
-package Model;
+package model;
 
 import javax.persistence.*;
 import java.util.ArrayList;

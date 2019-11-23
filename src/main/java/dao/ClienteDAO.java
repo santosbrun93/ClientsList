@@ -1,7 +1,8 @@
-package Dao;
+package dao;
 
-import Model.Cliente;
+import model.Cliente;
 
 public class ClienteDAO extends GenericoDAO<Cliente> {
-    
+
+        
 }

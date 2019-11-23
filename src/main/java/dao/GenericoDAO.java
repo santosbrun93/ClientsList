@@ -13,7 +13,7 @@ public abstract class GenericoDAO<T> {
     private Transaction transaction = null;
     
 
-    public long salvar(T entity) {
+    public long save(T entity) {
         long id = 0;
         try {
             session     = HibernateUtil.getSession();
@@ -29,7 +29,7 @@ public abstract class GenericoDAO<T> {
       return id;
     }
 
-    public void deletar(T entity) {
+    public void delete(T entity) {
         try {
             session     = HibernateUtil.getSession();
             transaction = session.beginTransaction();
@@ -43,7 +43,7 @@ public abstract class GenericoDAO<T> {
         }
     }
 
-    public void atualizar(T entity) {
+    public void update(T entity) {
         try {
             session     = HibernateUtil.getSession();
             transaction = session.beginTransaction();
@@ -57,7 +57,7 @@ public abstract class GenericoDAO<T> {
         }
     }
 
-    public Object localizar(Class classe, long id) {
+    public Object findById(Class classe, long id) {
         Object obj = null;
         try {
             session     = HibernateUtil.getSession();
@@ -71,7 +71,7 @@ public abstract class GenericoDAO<T> {
         return obj;
     }
 
-    public List acharObjetos(Class classe) {
+    public List findObject(Class classe) {
         List objects = null;
         try {
             session     = HibernateUtil.getSession();
