@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package visual;
 
 
@@ -93,7 +89,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jLabelRua.setText("Rua");
 
-        jLabelNum.setText("Número");
+        jLabelNum.setText("NÃºmero");
 
         jLabelCelCliente.setText("Telefone Celular");
 
@@ -103,7 +99,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         ftFixoCliente.setText("(XX) XXXX-XXXX");
 
-        jLabelPais.setText("País");
+        jLabelPais.setText("PaÃ­s");
 
         jLabelBairro.setText("Bairro");
 
@@ -179,9 +175,9 @@ public class CadastroCliente extends javax.swing.JFrame {
 
         jMenuBar.add(jMenuCadastro);
 
-        jMenuRelatorios.setText("Relatórios");
+        jMenuRelatorios.setText("RelatÃ³rios");
 
-        jMenuItemRelGeral.setText("Relatório Geral de Clientes");
+        jMenuItemRelGeral.setText("RelatÃ³rio Geral de Clientes");
         jMenuRelatorios.add(jMenuItemRelGeral);
 
         jMenuBar.add(jMenuRelatorios);
@@ -243,11 +239,11 @@ public class CadastroCliente extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(jRadioButton1)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jRadioButton3)
                                                 .addGap(11, 11, 11)
                                                 .addComponent(jRadioButton2))
-                                            .addComponent(etRuaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(etRuaCliente))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jLabelNum)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -312,7 +308,7 @@ public class CadastroCliente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void etNomeClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_etNomeClienteActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_etNomeClienteActionPerformed
 
     private void ftCPFClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ftCPFClienteActionPerformed
@@ -325,11 +321,7 @@ public class CadastroCliente extends javax.swing.JFrame {
 
     private void jButtonSalvarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvarClienteActionPerformed
         // TODO add your handling code here:
-        try{
-            novo.
-            
-            
-        }
+
     }//GEN-LAST:event_jButtonSalvarClienteActionPerformed
 
     private void ftNascimentoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ftNascimentoClienteActionPerformed

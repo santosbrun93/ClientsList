@@ -10,6 +10,16 @@
     <build>
 
 
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>6</source>
+                    <target>6</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
  <dependencies>
 
@@ -39,6 +49,11 @@
          <version>5.1.44</version>
      </dependency>
      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+     <dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <version>5.1.44</version>
+     </dependency>
   <dependency>
    <groupId>org.hibernate</groupId>
    <artifactId>hibernate-entitymanager</artifactId>
@@ -49,6 +64,16 @@
    <artifactId>beansbinding</artifactId>
    <version>1.2.1</version>
   </dependency>
+     <dependency>
+         <groupId>org.openjfx</groupId>
+         <artifactId>javafx-base</artifactId>
+         <version>13-ea+14b</version>
+     </dependency>
+     <dependency>
+         <groupId>org.openjfx</groupId>
+         <artifactId>javafx-fxml</artifactId>
+         <version>13-ea+14b</version>
+     </dependency>
  </dependencies>
 
 </project>

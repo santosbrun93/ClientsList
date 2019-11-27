@@ -7,14 +7,33 @@ import javax.persistence.*;
 @Entity
 @Table(name = "CLIENTES")
 
-public class Cliente extends Pessoa implements Serializable {
+public class Cliente implements Serializable {
    
        
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (name = "ID_CLIENTE")
     private long id;
+   
+     @Column (name = "NOME")
+    private String nome;
     
+    @Column (name = "NASCIMENTO")
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date nascimento;
+    
+    @Column (name = "CPF")
+    private String cpf;
+    
+    @Column (name = "RG")
+    private long rg;
+    
+    @Column (name = "CELULARES")
+    private String tcelular;
+    
+    @Column (name = "FIXOS")
+    private String tfixo;
+
     @Column (name = "RUA")
     private String rua;
     
@@ -40,30 +59,53 @@ public class Cliente extends Pessoa implements Serializable {
     public Cliente() {
     }
 
-    public Cliente(long id, String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status) {
-        this.id = id;
-        this.rua = rua;
-        this.numero = numero;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-        this.pais = pais;
-        this.status = status;
+public String getNome() {
+        return nome;
     }
 
-    
-    public Cliente(long id, String rua, int numero, String bairro, String cidade, String estado, String pais, boolean status, String nome, Date nascimento, String cpf, long rg, String tcelular, String tfixo) {
-        super(nome, nascimento, cpf, rg, tcelular, tfixo);
-        this.id = id;
-        this.rua = rua;
-        this.numero = numero;
-        this.bairro = bairro;
-        this.cidade = cidade;
-        this.estado = estado;
-        this.pais = pais;
-        this.status = status;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
+    public Date getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(Date nascimento) {
+        this.nascimento = nascimento;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public long getRg() {
+        return rg;
+    }
+
+    public void setRg(long rg) {
+        this.rg = rg;
+    }
+
+    public String getTcelular() {
+        return tcelular;
+    }
+
+    public void setTcelular(String tcelular) {
+        this.tcelular = tcelular;
+    }
+
+    public String getTfixo() {
+        return tfixo;
+    }
+
+    public void setTfixo(String tfixo) {
+        this.tfixo = tfixo;
+    }
     
     public String getRua() {
         return rua;
@@ -127,6 +169,11 @@ public class Cliente extends Pessoa implements Serializable {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" + "id=" + id + "nome" + nome + "nascimento" + nascimento + "cpf" + cpf + "rg" + rg + "tcelular" + tcelular + "tfixo"+ tfixo+ ", rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + ", cidade=" + cidade + ", estado=" + estado + ", pais=" + pais + ", status=" + status + '}';
     }
     
     

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package visual;
 
 /**
@@ -72,9 +68,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuBar2.add(jMenu3);
 
-        jMenu4.setText("Relatórios");
+        jMenu4.setText("Relatï¿½rios");
 
-        jMenuItem5.setText("Relatório Geral de Clientes");
+        jMenuItem5.setText("Relatï¿½rio Geral de Clientes");
         jMenu4.add(jMenuItem5);
 
         jMenuBar2.add(jMenu4);
@@ -131,9 +127,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuBar.add(jMenuCadastro);
 
-        jMenuRelatorios.setText("Relatórios");
+        jMenuRelatorios.setText("Relatï¿½rios");
 
-        jMenuItemRelGeral.setText("Relatório Geral de Clientes");
+        jMenuItemRelGeral.setText("Relatï¿½rio Geral de Clientes");
         jMenuRelatorios.add(jMenuItemRelGeral);
 
         jMenuBar.add(jMenuRelatorios);

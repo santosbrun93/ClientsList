@@ -32,16 +32,18 @@ public class HibernateUtil {
 
     public static Session getSession() throws HibernateException {
 
-        Session retSession=null;
+        Session retSession = null;
         try {
             retSession = sessionFactory.openSession();
-        }catch(HibernateException t){
+        } catch (HibernateException t) {
             System.err.println("Exception while getting session  // Exceção enquanto buscando sessão ");
-                if(retSession == null) {
-            System.err.println("session is discovered null  //  Sessão descoberta está nula ");
-        }
+            if (retSession == null) {
+                System.err.println("session is discovered null  //  Sessão descoberta está nula ");
+            }
 
+            return retSession;
+            }
         return retSession;
     }
-
+}
 
